@@ -1,0 +1,7 @@
+{
+    "python.testing.pytestArgs": [
+        "_30_Verschiedenes/VSCode_Pytest_example/test"
+    ],
+    "python.testing.unittestEnabled": false,
+    "python.testing.pytestEnabled": true
+}
