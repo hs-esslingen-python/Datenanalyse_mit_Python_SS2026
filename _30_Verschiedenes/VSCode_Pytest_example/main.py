@@ -1,16 +1,23 @@
 # This is a sample Python script.
 
-# Press Umschalt+F10 to execute it or replace it with your code.
-# Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
 
+from src import inc_dec
+from src import inc 
 
 def print_hi(name):
-    # Use a breakpoint in the code line below to debug your script.
-    print(f'Hi, {name}')  # Press Strg+F8 to toggle the breakpoint.
+    print(f'Hi, {name}')  
+
+def run_my_function():
+    print("Running my functions...")
+    
+    print(f"inc_dec.increment(5): {inc_dec.increment(5)}")
+    print(f"inc_dec.decrement(3): {inc_dec.decrement(3)}")
+    print(f"inc.inc(7): {inc.inc(7)}")
 
 
-# Press the green button in the gutter to run the script.
 if __name__ == '__main__':
     print_hi('VSCode and Pytest')
+
+    run_my_function()
 
 
