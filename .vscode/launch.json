@@ -1,0 +1,58 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Python Debugger: Python File",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${file}"
+        },
+        {
+            "name": "Python: main_Komandozeilenparameter.py",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${workspaceFolder}/_30_Verschiedenes/VSCode_Pytest_example/main_Komandozeilenparameter.py",
+            "console": "integratedTerminal",
+            "args": [
+                "KomandozeilenParameter1",
+                "KomandozeilenParameter2",
+                "KomandozeilenParameter3"
+            ]
+        },
+        {
+            "name": "Python: main_Komandozeilenparameter.py (dynamische args)",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${workspaceFolder}/_30_Verschiedenes/VSCode_Pytest_example/main_Komandozeilenparameter.py",
+            "console": "integratedTerminal",
+            "args": [
+                "${input:cmdArg1}",
+                "${input:cmdArg2}",
+                "${input:cmdArg3}"
+            ]
+        }
+    ],
+    "inputs": [
+        {
+            "id": "cmdArg1",
+            "type": "promptString",
+            "description": "Bitte erstes Kommandozeilenargument eingeben",
+            "default": "KomandozeilenParameter1"
+        },
+        {
+            "id": "cmdArg2",
+            "type": "promptString",
+            "description": "Bitte zweites Kommandozeilenargument eingeben",
+            "default": "KomandozeilenParameter2"
+        },
+        {
+            "id": "cmdArg3",
+            "type": "promptString",
+            "description": "Bitte drittes Kommandozeilenargument eingeben",
+            "default": "KomandozeilenParameter3"
+        }
+    ]
+}

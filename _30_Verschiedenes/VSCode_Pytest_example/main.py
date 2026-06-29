@@ -1,22 +1,21 @@
-# This is a sample Python script.
+# Dies ist ein Python-Skript.
 
 
 from src import inc_dec
-from src import inc 
-
-def print_hi(name):
-    print(f'Hi, {name}')  
+#from _30_Verschiedenes.VSCode_Pytest_example.src import add 
+from src import add
 
 def run_my_function():
-    print("Running my functions...")
+    print("Hallo - Dies ist die Funktion run_my_function:.")
     
     print(f"inc_dec.increment(5): {inc_dec.increment(5)}")
     print(f"inc_dec.decrement(3): {inc_dec.decrement(3)}")
-    print(f"inc.inc(7): {inc.inc(7)}")
+    print(f"add.addition(7, 3): {add.addition(7, 3)}")
 
 
 if __name__ == '__main__':
-    print_hi('VSCode and Pytest')
+    print('VSCode and Pytest')
+    print(f"__name__ = {__name__} - Dies ist die main.py Datei.")
 
     run_my_function()
 
